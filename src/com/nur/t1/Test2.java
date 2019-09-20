@@ -39,4 +39,62 @@ public class Test2 {
 	}
 }
 
+/**
+	int sum = 0; // 합계를 담을 변수
+	int idx = 2; // 곱할 숫자를 담을 변수
+	
+	1. Split
+		String [] joomins = jumin.split("");
+
+	2. subString
+		for(int i=0; i<joomin.length;i++){
+			if(i==6) {
+				continue;
+			}
+			String n1 = joomin.subString(i,i+1);
+			int n = Integer.parseInt(n1);
+			System.out.println(n1);
+		}
+	
+	3. charAt
+		for(int i=0; i<joomin.length()-1;i++) {
+			if(i==6) {
+				continue;
+			}
+			char ch = joomin.charAt(i);
+			String n1 = String.valueOf(ch);// char 타입의 숫자를 String 타입으로 바꿔주는 코딩 추가 실행
+			
+			
+			int n = Integer.parseInt(n1);
+			sum = sum + (n*idx);
+			idx++;
+			if(idx==10) {
+				idx=2;
+			}
+		}
+		sum = sum%11;
+		
+		sum = 11-sum;
+		
+		sum = sum%10;
+		
+		int result = Integer.parseInt(String.valueOf(joomin.charAt()-1));
+		if(sum == result) {
+			System.out.println("맞는 주민번호");
+		}else {
+			System.out.println("틀린 주민번호");
+		}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
